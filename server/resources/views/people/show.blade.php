@@ -7,7 +7,7 @@
     <p><strong>Nom de naissance :</strong> {{ $person->birth_name ?? '—' }}</p>
     <p><strong>Autres prénoms :</strong> {{ $person->middle_names ?? '—' }}</p>
     <p><strong>Date de naissance :</strong> {{ $person->date_of_birth ?? '—' }}</p>
-    <p><strong>Créé par :</strong> {{ $person->creator->name ?? 'Inconnu' }}</p>
+    <p><strong>Créé par :</strong> {{ $person->user->name ?? 'Inconnu' }}</p>
 
     <hr>
 
