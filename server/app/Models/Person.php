@@ -27,6 +27,6 @@ class Person extends Model
 
     //relation between a person and its user creator
     public function user():BelongsTo{
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'created_by');
     }
 }
